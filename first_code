@@ -1,4 +1,4 @@
-#include <iostream.h>
+#include <iostream>
 using namespace std;
 int main()
 {
@@ -7,7 +7,7 @@ int main()
 
 // Alternative
 
-#include <iostream.h>
+#include <iostream>
 
 int main()
 {
