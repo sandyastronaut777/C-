@@ -1,0 +1,16 @@
+#include <iostream.h>
+using namespace std;
+int main()
+{
+    cout << "Hello this is C++";
+}
+
+// Alternative
+
+#include <iostream.h>
+
+int main()
+{
+    std::cout << "Hello this is C++";
+}
+
