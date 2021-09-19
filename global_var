@@ -1,0 +1,10 @@
+#include <iostream>
+int x; //global variable declared
+int main()
+{
+    x=10; //initialized once
+    std::cout <<"first value of x = "<< x;
+    x=20; //initialized again
+    std::cout <<"Initialized again with value = "<< x;
+}
+    
