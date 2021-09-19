@@ -1,0 +1,54 @@
+class Abc
+{
+    int i;           //data variable
+    void display()         //Member Function
+    { 
+        cout << "Inside Member Function";
+    }
+}; // Class ends here
+
+int main()
+{
+    Abc obj;  // Creatig Abc class's object
+    obj.display();  //Calling member function using class object
+}
+
+
+
+
+
+//Errors
+
+/tmp/nilndhbZge.cpp: In member function 'void Abc::display()':
+/tmp/nilndhbZge.cpp:6:9: error: 'cout' was not declared in this scope
+    6 |         cout << "Inside Member Function";
+      |         ^~~~
+/tmp/nilndhbZge.cpp: In function 'int main()':
+/tmp/nilndhbZge.cpp:13:17: error: 'void Abc::display()' is private within this context
+   13 |     obj.display();  //Calling member function using class object
+      |                 ^
+/tmp/nilndhbZge.cpp:4:10: note: declared private here
+    4 |     void display()         //Member Function
+      |          ^~~~~~~
+
+
+
+
+//Correction
+
+#include <iostream>
+
+class Abc
+{
+    public:
+    int i;
+    void display()
+    {
+        std::cout << "Inside Member Function";
+    }
+};
+int main()
+{
+   Abc obj;
+   obj.display();
+}
