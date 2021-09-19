@@ -1,9 +1,10 @@
+#include <iostream>
 class Abc
 {
     int i;           //data variable
     void display()         //Member Function
     { 
-        cout << "Inside Member Function";
+        std::cout << "Inside Member Function";
     }
 }; // Class ends here
 
